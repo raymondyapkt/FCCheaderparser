@@ -28,9 +28,9 @@ app.get('/api/hello', function (req, res) {
 
 app.get('/api/whoami', function (req, res) {
 
-  var headers = req.headers
-  var language     = headers["accept-language"]
-  var software     = headers["user-agent"]
+  var headers   = req.headers
+  var language  = headers["accept-language"]
+  var software  = headers["user-agent"]
 
   res.json({"ipaddress":req.ip,
             "language":language,
